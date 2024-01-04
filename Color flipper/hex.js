@@ -15,5 +15,5 @@ btn.addEventListener("click", function () {
 });
 
 function RandomNumber() {
-  return Math.floor(Math.random() * 16);
+  return Math.floor(Math.random() * hex.length);
 }
