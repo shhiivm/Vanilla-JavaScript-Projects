@@ -5,7 +5,11 @@ const color = document.querySelector(".color");
 
 btn.addEventListener("click", function () {
   // get random number b/w 0-3
-  const randomNumber = Math.floor(Math.random() * colors.length);
+  const randomNum = RandomNumber();
   document.body.style.backgroundColor = colors[randomNumber];
   color.textContent = colors[randomNumber];
 });
+
+function RandomNumber() {
+  return Math.floor(Math.random() * hex.length);
+}
